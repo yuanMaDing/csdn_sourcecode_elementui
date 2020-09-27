@@ -1,0 +1,16 @@
+@mixin flex($arr:none, $jst:nono, $align:none) {
+    display: flex;
+    display: -webkit-flex;
+
+    @if $arr !=none {
+        flex-direction: $arr;
+    }
+
+    @if $jst !=none {
+        justify-content: $jst;
+    }
+
+    @if $align !=none {
+        align-items: $align;
+    }
+}
